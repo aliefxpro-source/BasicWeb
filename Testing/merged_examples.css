@@ -1,0 +1,30 @@
+/* merged_examples.css
+   Petunjuk:
+   - Untuk menggabungkan dua file CSS, copy aturan dari masing-masing file
+     dan tambahkan prefix .example1 atau .example2 di depan setiap selector.
+   - Contoh di bawah menunjukkan beberapa aturan dasar dan bagaimana "namespace"
+     mencegah konflik antara class/selector yang sama.
+*/
+
+:root{ --accent:#2c7be5; --muted:#666 }
+
+body{ font-family: Arial, Helvetica, sans-serif; padding:20px; }
+
+.example-container{ display:flex; gap:24px; align-items:flex-start; }
+.example{ flex:1; border:1px solid #ddd; padding:16px; border-radius:8px; background:#fafafa }
+.example h2{ margin-top:0 }
+
+/* Styles for File 1 (namespace .example1) */
+.example1 .sample-box{ background: #fff; padding:12px; border:1px dashed #eee }
+.example1 .btn{ background:var(--accent); color:#fff; border:0; padding:8px 12px; border-radius:4px }
+.example1 .btn:hover{ opacity:0.9 }
+
+/* Styles for File 2 (namespace .example2) */
+.example2 .gallery{ background:#fffef7; padding:12px; border:1px solid #f0e6c8 }
+.example2 .btn{ background:#f5a623; color:#fff; border:0; padding:8px 12px; border-radius:4px }
+.example2 .btn:hover{ transform:translateY(-1px) }
+
+/* Generic helper - use carefully to avoid leaking to namespaced content */
+.btn{ cursor:pointer }
+
+/* If you need full isolation, prefer iframe instead of merging CSS */

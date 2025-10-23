@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Merged Examples - Demo</title>
+  <link rel="stylesheet" href="merged_examples.css">
+</head>
+<body>
+  <h1>Merged Examples Demo</h1>
+
+  <p>Contoh ini menunjukkan dua cara aman menggabungkan dua file HTML+CSS ke satu halaman:</p>
+
+  <div class="example-container">
+    <section class="example example1">
+      <h2>Example 1 (File 1)</h2>
+      <!--
+        Tempelkan isi <body> dari File1.html di sini.
+        Jika File1 punya stylesheet terpisah, copy aturan CSS ke merged_examples.css
+        lalu prefix selector dengan ".example1 " (lihat komentar di merged_examples.css)
+      -->
+      <div class="sample-box">
+        <p>Ini placeholder untuk konten File 1.</p>
+        <button class="btn">Tombol 1</button>
+      </div>
+    </section>
+
+    <section class="example example2">
+      <h2>Example 2 (File 2)</h2>
+      <!--
+        Tempelkan isi <body> dari File2.html di sini.
+        Jika File2 punya stylesheet terpisah, copy aturan CSS ke merged_examples.css
+        lalu prefix selector dengan ".example2 " (lihat komentar di merged_examples.css)
+      -->
+      <div class="gallery">
+        <p>Ini placeholder untuk konten File 2.</p>
+        <button class="btn">Tombol 2</button>
+      </div>
+    </section>
+  </div>
+
+  <hr />
+  <h3>Catatan singkat</h3>
+  <ul>
+    <li>Metode namespacing (direkomendasikan) — prefix semua selector CSS masing-masing file dengan <code>.example1</code> atau <code>.example2</code>.</li>
+    <li>Alternatif isolasi: gunakan <code>&lt;iframe&gt;</code> untuk mencegah bentrok gaya sepenuhnya.</li>
+    <li>Jika Anda hanya ingin menggabungkan cepat, cukup link kedua file CSS di &lt;head&gt;, tetapi bisa terjadi konflik selector.</li>
+  </ul>
+
+</body>
+</html>

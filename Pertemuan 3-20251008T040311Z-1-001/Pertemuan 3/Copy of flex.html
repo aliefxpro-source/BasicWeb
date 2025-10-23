@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Display Flex Properti nya</title>
+<style>
+
+h1{
+    text-align: center;
+
+}
+
+
+   
+ .container {
+        display: flex;
+        border: 5px solid black;
+        height: 150px;
+        width: 40%;
+        justify-content: start; /* Mengatur jarak antar item */
+        align-items: center; /* Mengatur posisi vertikal item */
+        margin: auto; /* Membuat container berada di tengah halaman */
+        /* text-align: center;
+        padding-top: 20px; */
+        
+    }
+
+    .box {
+        width: 50px;
+        height: 50px;
+        background-color: lightblue;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: center; /* Mengatur teks di tengah secara horizontal */
+        align-items: center; /* Mengatur teks di tengah secara vertikal */
+        font-size: 50px;
+        /* text-align: center;
+        padding-top: 20px; */
+        display:flex;
+        align-items: center;
+        
+    }
+    .box1 {
+        background-color: lightcoral;
+    }
+
+    .box2 {
+        background-color: lightgreen;
+    }
+
+    .box3 {
+        background-color: lightgoldenrodyellow;
+    }
+
+    .container2 {
+        display: flex;
+        border: 5px solid black;
+        height: 150px;
+        width: 40%;
+        justify-content: end; /* Mengatur jarak antar item */
+        align-items: center; /* Mengatur posisi vertikal item */
+        margin: auto; /* Membuat container berada di tengah halaman */
+        
+    }
+     .box1 {
+        background-color: lightcoral;
+    }
+
+    
+
+
+     .container3{
+        display: flex;
+        border: 5px solid black;
+        height: 150px;
+        width: 40%;
+        justify-content: center; /* Mengatur jarak antar item */
+        align-items: center; /* Mengatur posisi vertikal item */
+        margin: auto; /* Membuat container berada di tengah halaman */
+        
+    }
+
+    
+
+    .container4 {
+        display: flex;
+        border: 5px solid black;
+        height: 150px;
+        width: 40%;
+        justify-content: space-around; /* Mengatur jarak antar item */
+        align-items: center; /* Mengatur posisi vertikal item */
+        margin: auto; /* Membuat container berada di tengah halaman */
+        
+    }
+
+    
+
+    .container5 {
+        display: flex;
+        border: 5px solid black;
+        height: 150px;
+        width: 40%;
+        justify-content: space-between; /* Mengatur jarak antar item */
+        align-items: center; /* Mengatur posisi vertikal item */
+        margin: auto; /* Membuat container berada di tengah halaman */
+        
+    }
+
+
+
+    
+
+    .container6 {
+        display: flex;
+        border: 5px solid black;
+        height: 150px;
+        width: 40%;
+        justify-content: space-evenly; /* Mengatur jarak antar item */
+        align-items: center; /* Mengatur posisi vertikal item */
+        margin: auto; /* Membuat container berada di tengah halaman */
+        
+    }
+
+   
+
+</style>
+
+</head>
+<body>
+    <h1>flex start</h1>
+    <div class="container">
+        
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    
+    </div>
+
+      <h1>flex end</h1>
+    <div class="container2">
+        
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    
+    </div>
+
+      <h1>center</h1>
+    <div class="container3">
+        
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    
+    </div>
+
+       <h1>space between</h1>
+    <div class="container4">
+        
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    
+    </div>
+
+    
+       <h1>space between</h1>
+    <div class="container5">
+        
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    
+    </div>
+
+       <h1>space enetly</h1>
+    <div class="container6">
+        
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    
+    </div>
+</body>
+</html>
